@@ -284,7 +284,7 @@ const SEA_CREATURES = (function() {
   const detailsSec  = document.getElementById('detailsSection');
   const rsvpSec     = document.getElementById('rsvp');
 
-  const TOTAL = 16;
+  const TOTAL = window.innerWidth <= 480 ? 5 : 8;
   for (let i = 0; i < TOTAL; i++) spawnBubble();
 
   function spawnBubble() {
